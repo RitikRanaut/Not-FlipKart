@@ -8,7 +8,7 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
 
   const hasItems = cartCtx.items.length > 0;
-  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+  const totalAmount = `₹ ${cartCtx.totalAmount.toFixed(2)}`;
 
   const cartItemRemoveHandler = id =>{
       cartCtx.removeItem(id);
