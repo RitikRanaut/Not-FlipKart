@@ -3,7 +3,18 @@
     width: 90%;
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
+    color : white;
   }
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
   
   .meals ul {
     list-style: none;
