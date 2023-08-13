@@ -45,6 +45,10 @@ const AvailableMeals = () => {
       <Card>
         <ul>{mealItem}</ul>
       </Card>
+      <h1>Recommended Products</h1>
+      <Card>
+        <ul>{mealItem}</ul>
+      </Card>
     </section>
   );
 };
