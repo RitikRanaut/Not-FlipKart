@@ -5,7 +5,7 @@ import CartContext from "../../../store/cart-context";
 
 const MealItem =(props)=>{
     const cartCtx = useContext(CartContext);
-    const price = `₹ ${props.price.toFixed(2)}`;
+    const price = `₹ ${props.price}`;
 
     const addToCartHandler = amount =>{
         cartCtx.addItem({
@@ -15,7 +15,7 @@ const MealItem =(props)=>{
             price: props.price
         });
     };
-
+    // console.log(props.id);
     return (
         <li className={classes.meal}>
             <div>
@@ -24,10 +24,10 @@ const MealItem =(props)=>{
                 <div className={classes.price}>{price}</div>
             </div>
             <div>
-                <MealItemForm onAddToCart={addToCartHandler} />
+                <MealItemForm onAddToCart={addToCartHandler} id={props.id} />
             </div>
         </li>
     );
 };
-
+export const item = [];
 export default MealItem;
